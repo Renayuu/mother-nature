@@ -7,35 +7,100 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         
         <!-- Bootstrap core CSS -->
-		<link href="bootstrap-3-3-7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap-3-3-7/css/bootstrap.min.css" type="text/css">
+        <!-- Own CSS -->
+        <link rel="stylesheet" href="ourcss/display.css" type="text/css">
         
-        <link href="ourcss/monitor.css" rel="stylesheet">
-    
-        <script src="js/monitor.js"></script>
+
+     
     </head>
     
     <body>
-       
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-md-8 col-xs-8">
+                ECG 1
+                </div>
+                
+                <div class="col-md-4 col-xs-4">
+                Particle Quantity Number
+                </div>
+                
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-md-8 col-xs-8">
+                ECG 2
+                </div>
+                
+                <div class="col-md-4 col-xs-4">
+                Breathing Frequency
+                </div>
+            
+            </div>
+            
+        </div>
         
-        <svg id="svg" viewBox="0 0 600 600">
-        <defs>
-        <pattern id="graphBg" y="-7" width="50" height="50" patternUnits="userSpaceOnUse" >
-          <rect width="50" height="50" style="stroke: #003d3d; fill: none" />
-        </pattern>
-          <filter id="glow" height="200%">
-            <feGaussianBlur stdDeviation="10" result="coloredBlur"/>
-            <feMerge>
-              <feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/>
-            </feMerge>
-        </filter> 
-        </defs>
-        <rect  width="600" height="600"  style="stroke: none; fill: url(#graphBg);" />
-        <path id="pulse" class="myP" fill="none" stroke="#00ffdf" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-            M13,345.056c0,0,181.559,0,197.824,0s19.235-37.914,30.394-37.33c14.786,0.774,9.689,48.615,27.664,48.615
-            c16.654,0,18.426-155.599,20.173-171.027s8.672-6.88,8.672-0.023c0,6.857,3.016,188.349,4.718,210.105
-            c1.251,15.993,8.25,11.16,9.542,1.028c1.311-10.285,4.058-74.211,17.194-74.211s4.376,22.844,25.92,22.844
-            c10.696,0,226.399,0,226.399,0"/>
-        </svg>
+        <div class="container">
+        
+            <div class="row">
+            whatever the title is
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-md-3">
+                waste1
+                </div>
+                
+                <div class="col-md-3">
+                waste2
+                </div>
+                
+                <div class="col-md-3">
+                waste 3
+                </div>
+                
+                <div class="col-md-3">
+                waste 4
+                </div>
+                
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-md-3">
+                waste1 - info
+                </div>
+                
+                <div class="col-md-3">
+                waste2 - info
+                </div>
+                
+                <div class="col-md-3">
+                waste 3 - info
+                </div>
+                
+                <div class="col-md-3">
+                waste 4 - info
+                </div>
+                
+            </div>
+        
+            <div class="row">
+            
+                datasets in detailed
+                
+            </div>
+            
+        </div>
+        
+        <!-- Javascript -->
+        <script src="js/jquery-3-1-0.js"></script> 
+        <!-- <script type="text/javascript" src="js/display.js"></script> -->
     </body>
 
 </html>
