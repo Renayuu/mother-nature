@@ -11,12 +11,9 @@ body {
 }
 
 h1 {
-    text-align: center;   
-}
-
-h1 img {
-    width: 110px;
-    height: auto;
+    font-size: 50px;
+    text-align: center;  
+    font-family: 'PT Sans', sans-serif, serif;
 }
 
 h2
@@ -36,6 +33,12 @@ h3
 	color: #f9f1cc;
 }
 
+header > div:last-child {
+    padding-top: 10px;
+    font-family: 'PT Sans', sans-serif, serif;
+}
+
+
 .bannerlogo
 {
 	width: 150%;
@@ -45,6 +48,7 @@ h3
 
 .bannerimg
 {
+    padding-top: 10px;
 	width: 100%;
 	height: auto;
 }
