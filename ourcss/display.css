@@ -6,3 +6,49 @@ body {
 .row {
     height: 150px;   
 }
+
+h1 {
+    text-align: center;   
+}
+
+h1 img {
+    width: 110px;
+    height: auto;
+}
+
+.ecg > div:first-child {
+    /*background-color: aqua;*/
+    background-image: url("../assets/ecg_bg.png");
+    background-size: 80%;
+    background-position: 0px 0px;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+/* ECG Animation */
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+#bleed{
+  stroke-dasharray:437;
+  -webkit-animation: dash 4s infinite ease-out ;
+}
+
+/*Animation is the same for all 3 SVG's*/
+@-webkit-keyframes dash{
+  from{
+    
+    stroke-dashoffset:814;
+  }
+  to {
+    stroke-dashoffset:-814;
+    
+  }
