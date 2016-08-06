@@ -1,6 +1,6 @@
 body {
     /*background-color: #092a51;*/
-    background-color: #00be91;
+    background-color: #308d6f;
     /*color: #9dfdfd;*/
     color: white;
     
@@ -27,7 +27,26 @@ h2
 td
 {
 	font-size: 0.7em;
-	color: #424141;
+	/*color: #424141;*/
+	color: #f9f1cc;
+}
+
+h3
+{
+	color: #f9f1cc;
+}
+
+.bannerlogo
+{
+	width: 150%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.bannerimg
+{
+	width: 100%;
+	height: auto;
 }
 
 .ecg > div:first-child {
