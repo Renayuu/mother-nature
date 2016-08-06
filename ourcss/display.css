@@ -1,9 +1,12 @@
 body {
-    background-color: #092a51;
-    color: #9dfdfd;
+    /*background-color: #092a51;*/
+    background-color: #00be91;
+    /*color: #9dfdfd;*/
+    color: white;
+    
 }
 
-.row {
+.row_ecg {
     height: 150px;   
 }
 
@@ -14,6 +17,17 @@ h1 {
 h1 img {
     width: 110px;
     height: auto;
+}
+
+h2
+{
+	font-size: 5em;
+}
+
+td
+{
+	font-size: 0.7em;
+	color: #424141;
 }
 
 .ecg > div:first-child {
@@ -52,3 +66,6 @@ svg {
     stroke-dashoffset:-814;
     
   }
+  
+ /* our styling */
+ 

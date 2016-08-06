@@ -25,58 +25,61 @@
         
         <div class="container">
             
-            <div class="row ecg" >
+            <div class="row" >
+	           <div class="ecg">
                 
                 <div class="col-md-7 col-xs-7">
                     <svg version="1.2" height="300" width="1200" xmlns="http://www.w3.org/2000/svg"
     viewport="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
     
-    <path  stroke="rgba(93, 197, 203, 0.20)" fill="none"stroke-width="3"stroke-linejoin="round"
-          d="
-            M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210
+    					<path  stroke="rgba(93, 197, 203, 0.20)" fill="none"stroke-width="4"stroke-linejoin="round" d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210
             " 
-          /> 
+						/> 
                         
-    <path  id="bleed" stroke="#b6dde7" fill="none"stroke-width="2"stroke-linejoin="round"
-          d="
-            M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" /> 
+						<path  id="bleed" stroke="#b6dde7" fill="none"stroke-width="4"stroke-linejoin="round"
+					d="
+					M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" /> 
                      
-</svg>
+					</svg>
+                </div>
+	          	</div> <!-- /ecg -->
+                
+                <div class="col-md-4 col-xs-4 center">
+                	<h3>PM10 Particles</h3>
+                	<h2><span id="pm10">16.3</span></h2>
                 </div>
                 
-                <div class="col-md-4 col-xs-4">
-                Particle Quantity Number
-                </div>
                 
             </div>
             
             <div class="row ecg">
             
                 <div class="col-md-7 col-xs-7">
-                <svg version="1.2" height="300" width="1200" xmlns="http://www.w3.org/2000/svg"
+                	<svg version="1.2" height="300" width="1200" xmlns="http://www.w3.org/2000/svg"
     viewport="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-    <path  stroke="rgba(93, 197, 203, 0.43)" fill="none"stroke-width="5"stroke-linejoin="round"
-          d="
+    				<path  stroke="rgba(93, 197, 203, 0.43)" fill="none"stroke-width="5"stroke-linejoin="round"
+					d="
             M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210
             " 
-          /> 
-    <path  id="longbeat"style="stroke:#b6dde7; fill:none;stroke-width:2;stroke-linejoin:round"
-          d="
+					/> 
+					<path  id="longbeat"style="stroke:#b6dde7; fill:none;stroke-width:2;stroke-linejoin:round"
+					d="
             M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210
             " 
-          /> 
-      <rect x="-3" y="-4" height="8" width="6" rx="20" ry="20"fill="red">
-     <animateMotion dur="3s" repeatCount="indefinite">
-             <mpath xlink:href="#longbeat"/>
-          </animateMotion>
+					/> 
+					<rect x="-4" y="-5" height="10" width="8" rx="20" ry="20"fill="red">
+						<animateMotion dur="10s" repeatCount="indefinite">
+							<mpath xlink:href="#longbeat"/>
+						</animateMotion>
     
-  </rect>               
-</svg>
+					</rect>               
+					</svg>
                 </div>
                 
                 <div class="col-md-4 col-xs-4">
-                Breathing Frequency
+                	<h3>Respiration Rate</h3>
+                	<h2 class="keydata"><span id="resprate">60</span></h2>
                 </div>
             
             </div>
@@ -86,25 +89,25 @@
         <div class="container">
         
             <div class="row">
-            whatever the title is
+            	<h3>Current Emissions Data</h3>
             </div>
             
             <div class="row">
             
                 <div class="col-md-3">
-                waste1
+                	<img src="assets/mn_air.png" alt="Icon for air" />
                 </div>
                 
                 <div class="col-md-3">
-                waste2
+                	<img src="assets/mn_water.png" alt="Icon for water" />
                 </div>
                 
                 <div class="col-md-3">
-                waste 3
+                	<img src="assets/mn_ground.png" alt="Icon for ground" />
                 </div>
                 
                 <div class="col-md-3">
-                waste 4
+                	<img src="assets/mn_transfer.png" alt="Icon for transfer" />
                 </div>
                 
             </div>
@@ -112,26 +115,24 @@
             <div class="row">
             
                 <div class="col-md-3">
-                waste1 - info
+                	<p>Emissions into air</p>
+                	<span id="airdetails"></span>
                 </div>
                 
                 <div class="col-md-3">
-                waste2 - info
+                	<p>Emissions into water</p>
+                	<span id="waterdetails"></span>
                 </div>
                 
                 <div class="col-md-3">
-                waste 3 - info
+                	<p>Emissions into ground</p>
+                	<span id="landdetails"></span>
                 </div>
                 
                 <div class="col-md-3">
-                waste 4 - info
+                	<p>Waste Transfer</p>
+                	<span id="transferdetails"></span>
                 </div>
-                
-            </div>
-        
-            <div class="row">
-            
-                datasets in detailed
                 
             </div>
             
@@ -140,6 +141,7 @@
         <!-- Javascript -->
         <script src="js/jquery-3-1-0.js"></script> 
         <!-- <script type="text/javascript" src="js/display.js"></script> -->
+        <script src="js/mn_brisbane.js"></script>
     </body>
 
 </html>
