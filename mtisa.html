@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="bootstrap-3-3-7/css/bootstrap.min.css" type="text/css">
+        <!-- Own CSS -->
+        <link rel="stylesheet" href="ourcss/display.css" type="text/css">
+        
+        <title>Mt Isa Health Status</title>
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>
+                <img src="assets/header_logo.png" alt="Logo for the Header" /> @ Mount Isa
+            </h1>
+        </header>
+        
+        <div class="container">
+            
+            <div class="row" >
+	           <div class="ecg">
+                
+                <div class="col-md-7 col-xs-7">
+                    <svg version="1.2" height="300" width="1200" xmlns="http://www.w3.org/2000/svg"
+    viewport="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    					<path  stroke="rgba(93, 197, 203, 0.20)" fill="none"stroke-width="4"stroke-linejoin="round" d="M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210
+            " 
+						/> 
+                        
+						<path  id="bleed" stroke="#b6dde7" fill="none"stroke-width="4"stroke-linejoin="round"
+					d="
+					M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210" /> 
+                     
+					</svg>
+                </div>
+	          	</div> <!-- /ecg -->
+                
+                <div class="col-md-4 col-xs-4 center">
+                	<h3>PM10 Particles</h3>
+                	<h2><span id="pm10">16.3</span></h2>
+                </div>
+                
+                
+            </div>
+            
+            <div class="row ecg">
+            
+                <div class="col-md-7 col-xs-7">
+                	<svg version="1.2" height="300" width="1200" xmlns="http://www.w3.org/2000/svg"
+    viewport="0 0 60 60" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    				<path  stroke="rgba(93, 197, 203, 0.43)" fill="none"stroke-width="5"stroke-linejoin="round"
+					d="
+            M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210
+            " 
+					/> 
+					<path  id="longbeat"style="stroke:#b6dde7; fill:none;stroke-width:2;stroke-linejoin:round"
+					d="
+            M0,90L250,90Q257,60 262,87T267,95 270,88 273,92t6,35 7,-60T290,127 297,107s2,-11 10,-10 1,1 8,-10T319,95c6,4 8,-6 10,-17s2,10 9,11h210
+            " 
+					/> 
+					<rect x="-4" y="-5" height="10" width="8" rx="20" ry="20"fill="red">
+						<animateMotion dur="10s" repeatCount="indefinite">
+							<mpath xlink:href="#longbeat"/>
+						</animateMotion>
+    
+					</rect>               
+					</svg>
+                </div>
+                
+                <div class="col-md-4 col-xs-4">
+                	<h3>Respiration Rate</h3>
+                	<h2 class="keydata"><span id="resprate">60</span></h2>
+                </div>
+            
+            </div>
+            
+        </div>
+        
+        <div class="container">
+        
+            <div class="row">
+            	<h3>Current Emissions Data</h3>
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-md-3">
+                	<img src="assets/mn_air.png" alt="Icon for air" />
+                </div>
+                
+                <div class="col-md-3">
+                	<img src="assets/mn_water.png" alt="Icon for water" />
+                </div>
+                
+                <div class="col-md-3">
+                	<img src="assets/mn_ground.png" alt="Icon for ground" />
+                </div>
+                
+                <div class="col-md-3">
+                	<img src="assets/mn_transfer.png" alt="Icon for transfer" />
+                </div>
+                
+            </div>
+            
+            <div class="row">
+            
+                <div class="col-md-3">
+                	<p>Emissions into air</p>
+                	<span id="airdetails"></span>
+                </div>
+                
+                <div class="col-md-3">
+                	<p>Emissions into water</p>
+                	<span id="waterdetails"></span>
+                </div>
+                
+                <div class="col-md-3">
+                	<p>Emissions into ground</p>
+                	<span id="landdetails"></span>
+                </div>
+                
+                <div class="col-md-3">
+                	<p>Waste Transfer</p>
+                	<span id="transferdetails"></span>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!-- Javascript -->
+        <script src="js/jquery-3-1-0.js"></script> 
+        <!-- <script type="text/javascript" src="js/display.js"></script> -->
+        <script src="js/mn_mtisa.js"></script>
+    </body>
+
+</html>
